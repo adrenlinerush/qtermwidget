@@ -11,7 +11,7 @@
 class QTermWidget : QWidget {
 
 %TypeHeaderCode
-#include <qtermwidget.h>
+#include <qtermwidget5/qtermwidget.h>
 %End
 
 public:
@@ -41,6 +41,8 @@ public:
     void setTerminalFont(QFont &font);
     QFont getTerminalFont();
     void setTerminalOpacity(qreal level);
+    void setTerminalBackgroundImage(const QString & backgroundImage);
+    void setTerminalBackgroundMode(int);
     void setEnvironment(const QStringList & environment);
     void setShellProgram(const QString & progname);
     void setWorkingDirectory(const QString & dir);
